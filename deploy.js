@@ -1,5 +1,5 @@
 /*!***************************************************
- * git-branch-deploy v0.2.0
+ * git-branch-deploy v1.0.0
  * https://github.com/julmot/git-branch-deploy
  * Copyright (c) 2018, Julian Kühnel
  * Released under the MIT license https://git.io/fNwlS
