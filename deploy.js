@@ -1,5 +1,5 @@
 /*!***************************************************
- * git-branch-deploy v0.1.0
+ * git-branch-deploy v0.2.0
  * https://github.com/julmot/git-branch-deploy
  * Copyright (c) 2018, Julian Kühnel
  * Released under the MIT license https://git.io/fNwlS
@@ -43,7 +43,7 @@ module.exports = props => {
   for (let prop in opts) {
     if (opts.hasOwnProperty(prop)) {
       if (typeof opts[prop] === 'undefined' || opts[prop] === '') {
-        console.log(`Environment variable '${prop}' is not defined`);
+        console.log(`Option '${prop}' is not defined`);
         process.exit();
       }
     }
@@ -62,8 +62,6 @@ module.exports = props => {
     .addConfig('user.name', opts.gitName)
     .addConfig('user.email', opts.gitEmail)
     .exec(() => {
-      console.log(opts.sourceDir);
-      console.log(opts.deployDir);
       fs.copySync(opts.sourceDir, opts.deployDir);
       git(opts.deployDir)
       .add('.')
