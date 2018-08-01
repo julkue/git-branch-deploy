@@ -1,0 +1,26 @@
+{
+  "name": "@julmot/git-branch-deploy",
+  "version": "0.1.0",
+  "description": "Git Branch Deployment",
+  "keywords": [
+    "git",
+    "github",
+    "deploy"
+  ],
+  "repository": "julmot/git-branch-deploy",
+  "bugs": {
+    "url": "https://github.com/julmot/git-branch-deploy/issues"
+  },
+  "author": {
+    "name": "Julian Kühnel",
+    "url": "https://github.com/julmot"
+  },
+  "homepage": "https://github.com/julmot/git-branch-deploy",
+  "license": "MIT",
+  "main": "deploy.js",
+  "dependencies": {
+    "del": "^3.0.0",
+    "node-fs-extra": "^0.8.2",
+    "simple-git": "^1.96.0"
+  }
+}
