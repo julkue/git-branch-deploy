@@ -62,9 +62,9 @@ module.exports = props => {
     .addConfig('user.name', opts.gitName)
     .addConfig('user.email', opts.gitEmail)
     .exec(() => {
-      fs.copySync(opts.sourceDir, opts.deployDir);
       console.log(opts.sourceDir);
       console.log(opts.deployDir);
+      fs.copySync(opts.sourceDir, opts.deployDir);
       git(opts.deployDir)
       .add('.')
       .commit(`Update ${opts.branch}`)
