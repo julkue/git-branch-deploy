@@ -1,12 +1,12 @@
 /*!***************************************************
- * git-branch-deploy v1.0.0
+ * git-branch-deploy v1.0.1
  * https://github.com/julmot/git-branch-deploy
  * Copyright (c) 2018, Julian Kühnel
  * Released under the MIT license https://git.io/fNwlS
  *****************************************************/
 'use strict';
 const del = require('del'),
-  fs = require('node-fs-extra'),
+  fs = require('fs-extra'),
   git = require('simple-git');
 
 module.exports = props => {

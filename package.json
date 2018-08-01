@@ -1,6 +1,6 @@
 {
   "name": "@julmot/git-branch-deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Git Branch Deployment",
   "keywords": [
     "git",
@@ -20,7 +20,7 @@
   "main": "deploy.js",
   "dependencies": {
     "del": "^3.0.0",
-    "node-fs-extra": "^0.8.2",
+    "fs-extra": "^7.0.0",
     "simple-git": "^1.96.0"
   }
 }
